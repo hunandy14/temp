@@ -40,13 +40,13 @@ sgink<T1>::sgink(const T1 &n){
     this->head.data = n;
 }
 
-// template <typename T1>
-// node* sgink<T1>::create(const T1 &n){
-//     node *n = new node;
-//     n->data = -1;
-//     n->next = 0;
-//     return n
-// }
+template <typename T1>
+node* sgink<T1>::create(const T1 &n){
+    node *temp = new node;
+    temp->data = -1;
+    temp->next = 0;
+    return temp;
+}
 
 template <typename T1>
 void sgink<T1>::pri(){
@@ -54,8 +54,8 @@ void sgink<T1>::pri(){
 }
 /*=======================================================*/
 int main(int argc, char const *argv[]){
-	sgink<int> a;
-	a.pri();
-	return 0;
+    sgink<int> a;
+    a.pri();
+    return 0;
 }
 /*=======================================================*/
