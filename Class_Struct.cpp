@@ -1,5 +1,5 @@
 /**********************************************************
-Name : double_link
+Name : link
 Date : 2016/07/05
 By   : CharlotteHonG
 Final: 2016/07/05
@@ -13,11 +13,10 @@ template <typename T1>
 class sgink{
 private:
     // 宣告節點結構
-    struct nodestruct{
+    struct node{
         T1 data;
-        struct nodestruct* next;
+        node* next{nullptr};
     };
-    typedef struct nodestruct node;
     // 宣告開頭
     node head;
     
