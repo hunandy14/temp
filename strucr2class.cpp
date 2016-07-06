@@ -10,30 +10,30 @@ using namespace std;
 class structs{
 friend class test;
 private:
-	int a;
-	string b;
+    int a;
+    string b;
 };
 
 class test{
 public:
-	test(){
-		stc.a=10;
-		stc.b="123";
-	}
-	int pria(){
-		return stc.a;
-	}
-	string prib(){
-		return stc.b;
-	}
+    test(){
+        stc.a=10;
+        stc.b="123";
+    }
+    int pria(){
+        return stc.a;
+    }
+    string prib(){
+        return stc.b;
+    }
 private:
-	structs stc;
+    structs stc;
 };
 /*=======================================================*/
 int main(int argc, char const *argv[]){
-	test obj;
-	cout << obj.pria() << endl;
-	cout << obj.prib() << endl;
-	return 0;
+    test obj;
+    cout << obj.pria() << endl;
+    cout << obj.prib() << endl;
+    return 0;
 }
 /*=======================================================*/
